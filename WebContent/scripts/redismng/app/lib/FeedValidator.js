@@ -1,0 +1,1 @@
+Ext.define("FV.lib.FeedValidator",{singleton:true,url:"feed-proxy.php",validate:function(b,a){a=a||{};Ext.applyIf(a,{scope:this,success:Ext.emptyFn,failure:Ext.emptyFn})},checkResponse:function(a,f){var i=Ext.DomQuery,c=f.get("url"),b,d,h;try{b=a.responseXML;d=b.getElementsByTagName("channel")[0];if(d){h=i.selectValue("title",d,c);return true}}catch(g){}return false}});

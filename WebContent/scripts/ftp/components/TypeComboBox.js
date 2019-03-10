@@ -1,0 +1,1 @@
+Ext.define("Ext.inas.TypeComboBox",{extend:"Ext.form.field.ComboBox",xtype:"typeComboBox",blankText:MSG_FIELD_NOTNULL,typeAhead:true,editable:false,displayField:"name",valueField:"value",initComponent:function(){this.store=Ext.create("Ext.data.Store",{fields:["name","value"],data:[{name:"上传",value:"1"},{name:"下载",value:"2"},{name:"删除",value:"3"}]});this.callParent(arguments)}});

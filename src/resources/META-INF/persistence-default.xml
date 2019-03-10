@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
+
+
+	<persistence-unit name="defaultPU" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider> 
+		<class>com.eastcom_sw.core.entity.baseinfo.Commondatas</class>
+		<class>com.eastcom_sw.core.entity.desktop.DesktopResource</class>
+		<class>com.eastcom_sw.core.entity.desktop.DesktopResourcePK</class>
+		<class>com.eastcom_sw.core.entity.desktop.UserDesktop</class>
+		<class>com.eastcom_sw.core.entity.log.SysLog</class>
+		<class>com.eastcom_sw.core.entity.log.SysUserOnlineLogD</class>
+		<class>com.eastcom_sw.core.entity.log.SysUserOnlineLog</class>
+		<class>com.eastcom_sw.core.entity.log.SysUserReqLog</class>
+		<class>com.eastcom_sw.core.entity.log.SysRegionLog</class>
+		<class>com.eastcom_sw.core.entity.portal.Gadgets</class>
+		<class>com.eastcom_sw.core.entity.portal.Portal</class>
+		<class>com.eastcom_sw.core.entity.portal.PortletConf</class>
+		<class>com.eastcom_sw.core.entity.notification.Notification</class>
+		<class>com.eastcom_sw.core.entity.notification.NotificationLog</class>
+		<class>com.eastcom_sw.core.entity.notification.NotificationRel</class>
+		<class>com.eastcom_sw.core.entity.process.DeployModel</class>
+		<class>com.eastcom_sw.core.entity.notification.UserNotificationDeleted</class>
+        <class>com.eastcom_sw.core.entity.security.User</class>
+        <class>com.eastcom_sw.core.entity.security.Department</class>
+        <class>com.eastcom_sw.core.entity.security.OnlineUser</class>
+        <class>com.eastcom_sw.core.entity.security.Resource</class>
+        <class>com.eastcom_sw.core.entity.security.Role</class>
+        <class>com.eastcom_sw.core.entity.security.RoleRegion</class>
+        <class>com.eastcom_sw.core.entity.log.SysLogStatistics</class>
+        <class>com.eastcom_sw.core.entity.configuration.SYSConfiguration</class>
+        <class>com.eastcom_sw.core.entity.mobileauth.MAUTH_LIST</class>
+        <class>com.eastcom_sw.core.entity.mobileauth.MAUTH_LOGS</class>
+        <class>com.eastcom_sw.core.entity.ftp.FtpServerInfo</class>
+        <class>com.eastcom_sw.core.entity.ftp.FtpProcessLog</class>
+        <!-- 
+        <class>com.eastcom_sw.core.entity.monitor.SysMonitorN</class>
+		<class>com.eastcom_sw.core.entity.monitor.SysMonitorNId</class>
+		<class>com.eastcom_sw.core.entity.monitor.SysMonitorNIndicator</class>
+		<class>com.eastcom_sw.core.entity.monitor.SysMonitorNMapping</class>
+		<class>com.eastcom_sw.core.entity.monitor.SysMonitorNMappingId</class>
+		<class>com.eastcom_sw.core.entity.monitor.SysMonitorNServer</class>
+         -->
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorAlarm</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorIndicator</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogCpu</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogDisk</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogIo</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogLoadaverage</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogMem</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogNet</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogProc</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorMapping</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorResource</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorResourceConf</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorResourceTopo</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorInstantAlarm</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogDatabase</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogMq</class>
+		<class>com.eastcom_sw.core.entity.sysmonitor.MonitorLogCache</class>
+		
+		<class>com.eastcom_sw.core.entity.log.SysLogAudit</class>
+
+		<class>com.eastcom_sw.core.entity.RewardInfoEntity</class>
+		<properties>
+		<!--   上海sybase数据库需要加上这两句话
+			<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false" />
+			<property name="javax.persistence.validation.mode" value="none" />
+		 -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.transaction.manager_lookup_class" value="com.atomikos.icatch.jta.hibernate3.TransactionManagerLookup" />
+		</properties>
+	</persistence-unit> 
+</persistence>

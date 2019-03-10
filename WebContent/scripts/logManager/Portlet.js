@@ -1,0 +1,1 @@
+Ext.define("Ext.ux.Portlet",{extend:"Ext.Panel",alias:"widget.portlet",anchor:"100%",frame:true,collapsible:true,draggable:true,cls:"x-portlet"});

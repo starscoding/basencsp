@@ -1,0 +1,1 @@
+define(["./menu","./leftmenu","./toolbar","./tab","./foot","./config","registerEastcom"],function(g,a,f,e,d,b,c){b.init();e.init();g.init();a.init();f.init();d.init();c()});

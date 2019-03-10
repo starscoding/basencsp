@@ -1,0 +1,1 @@
+Ext.define("Ext.ux.PortalColumn",{extend:"Ext.Panel",alias:"widget.portalcolumn",layout:"anchor",autoEl:"div",defaultType:"portlet",cls:"x-portal-column"});

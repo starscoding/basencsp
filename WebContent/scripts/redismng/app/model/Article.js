@@ -1,0 +1,1 @@
+Ext.define("FV.model.Article",{extend:"Ext.data.Model",fields:["key","value"]});

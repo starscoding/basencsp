@@ -1,0 +1,47 @@
+[{
+			text : '清空数据库',
+			iconCls : 'clearAll',
+			hidden : true,
+			action : 'clearAll',
+			disabled : true
+		}, {
+			text : '一次性加载',
+			iconCls : 'add',
+			hidden : true,
+			action : 'loadAll'
+		}, {
+			text : '消息通告基础信息',
+			iconCls : 'notice',
+			hidden : false,
+			action : 'initNotice'
+		}, {
+			text : '部门上下级关系',
+			iconCls : 'deptrel',
+			hidden : false,
+			action : 'initDeptRel'
+		}, {
+			text : '系统基础数据',
+			iconCls : 'basedata',
+			hidden : false,
+			action : 'initBaseData'
+		}, {
+			text : '资源基础信息',
+			iconCls : 'resource',
+			hidden : false,
+			action : 'initResource'
+		}, {
+			text : '资源角色关系',
+			iconCls : 'resourcerole',
+			hidden : false,
+			action : 'initResourceRole'
+		}, {
+			text : '用户角色关系',
+			iconCls : 'userrole',
+			hidden : false,
+			action : 'initUserRole'
+		}, {
+			text : '系统选项配置',
+			iconCls : 'config',
+			hidden : false,
+			action : 'initConfiguration'
+		}]

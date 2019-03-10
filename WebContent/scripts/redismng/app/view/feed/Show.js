@@ -1,0 +1,1 @@
+Ext.define("FV.view.feed.Show",{extend:"Ext.panel.Panel",alias:"widget.feedshow",requires:["FV.view.article.Grid","FV.view.article.Preview"],closable:false,layout:{type:"vbox",align:"stretch"},initComponent:function(){Ext.apply(this,{items:[{xtype:"articlegrid",split:true,flex:2/3},{xtype:"articlepreview",cls:"articlepreview",flex:1/3}]});this.callParent(arguments)}});

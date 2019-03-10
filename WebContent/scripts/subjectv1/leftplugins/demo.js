@@ -1,0 +1,1 @@
+define(["../utils","../tab","../menuitem"],function(a,b,c){var d=function(e){};return{init:d}});

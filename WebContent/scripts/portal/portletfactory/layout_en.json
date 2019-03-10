@@ -1,0 +1,28 @@
+{
+	"layout" : [{
+				"id" : "1",
+				"name" : "Layout 1",
+				"desc" : "Single Cloumn",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout1.gif"
+			}, {
+				"id" : "2",
+				"name" : "Layout 2",
+				"desc" : "Two Columns 50%,50%",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout2.gif"
+			}, {
+				"id" : "3",
+				"name" : "Layout 3",
+				"desc" : "Two Columns 30%,70%",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout3.gif"
+			}, {
+				"id" : "4",
+				"name" : "Layout 4",
+				"desc" : "Two Columns 70%,30%",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout4.gif"
+			}, {
+				"id" : "5",
+				"name" : "Layout 5",
+				"desc" : "Three Columns 33%,33%,33%",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout5.gif"
+			}]
+}

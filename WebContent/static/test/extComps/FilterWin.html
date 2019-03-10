@@ -1,0 +1,63 @@
+<!DOCTYPE HTML">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<script type="text/javascript"
+	src="../../jslib/extjs-4.2.1/ext-all-debug.js"></script>
+<script type="text/javascript" src="../../locale/common_zh_CN.js"></script>
+<link
+	href="../../jslib/extjs-4.2.1//resources/ext-theme-blue/ext-theme-blue-all.css"
+	rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="testDiv"></div>
+	<script type="text/javascript">
+		var eastcom = {
+			baseURL : 'http://localhost:7080/web-common'
+		};
+		Ext.Loader.setConfig({
+			enabled : true
+		});
+		Ext.Loader.setPath('Ext.components',
+				'../../../static/commonjs/components');
+		Ext.onReady(function() {
+			Ext.create('Ext.panel.Panel', {
+				renderTo : 'testDiv',
+				title : 'test',
+				buttons : [ {
+					text : '测试窗口',
+					handler : function() {
+						var win = Ext.create('Ext.components.FilterWin', {
+							height : 300,
+							width : 500,
+							allowBlank : false,
+							title : '条件筛选',
+							submit : function(recs) {
+								Ext.each(recs,function(rec){
+									console.log(rec.get('display'))
+								})
+							},
+							symbolDefaultValues : {
+								'p1' : {
+									symbol : '=',
+									value : 100
+								}
+							},
+							combo : [ {
+								"label" : "字段1",
+								"name" : "p1"
+							}, {
+								"label" : "字段2",
+								"name" : "p2"
+							} ]
+						}).show();
+					}
+				} ]
+			});
+		});
+	</script>
+</body>
+</html>

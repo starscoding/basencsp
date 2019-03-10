@@ -1,0 +1,23 @@
+<div>
+	<div id="top-menu-tpl">
+		<li id="{{id}}"><span class="single-menu"> <span class="menu-name">{{nameCn}}</span>
+				<span class="glyphicon top-menu-arrowdown"></span>
+		</span></li>
+	</div>
+	<div id="menu-level2-tpl">
+		<div class="menu-level-2">
+			<h5>
+				<!--menu-level2-title-inner-tpl-->
+			</h5>
+			<div name="menu-level3-cnt" class="menu-level3-cnt">
+				<!--insert menu-level3-tpl-->
+			</div>
+		</div>
+	</div>
+	<div id="menu-level2-title-inner-tpl">
+		<span id="{{id}}" class="{{type}} {{disabledclass}}">{{nameCn}}</span>
+	</div>
+	<div id="menu-level3-tpl">
+		<a id="{{id}}" class="{{disabledclass}}">{{nameCn}}</a>
+	</div>
+</div>

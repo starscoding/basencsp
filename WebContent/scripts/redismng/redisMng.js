@@ -1,0 +1,1 @@
+Ext.application({name:"FV",paths:{"Ext.ux":extDir+"/ux/",FV:"../../scripts/redismng/app"},controllers:["Articles","Feeds"],autoCreateViewport:true});

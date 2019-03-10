@@ -1,0 +1,44 @@
+.x-grid-row-checker-checked-disabled {
+	height: 14px;
+	width: 14px;
+	line-height: 0;
+	background-image:
+		url('../../../images/common/icons/checked-disabled.gif');
+	background-position: -1px -1px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	margin-left: 1px;
+	background-position: 50% -2px
+}
+
+.x-grid-row-checker-disabled {
+	height: 14px;
+	width: 14px;
+	line-height: 0;
+	background-image:
+		url('../../../images/common/icons/unChecked-disabled.gif');
+	background-position: -1px -1px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	margin-left: 1px;
+	background-position: 50% -2px
+}
+
+.x-tree-checkbox-checked-disabled {
+	margin: 0px 3px 0 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 13px;
+	height: 13px;
+	background: no-repeat;
+	background-image:
+		url('../../../images/common/icons/checked-disabled-s.gif');
+	overflow: hidden;
+	padding: 0;
+	border: 0
+}
+
+.x-tree-checkbox-disabled::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}

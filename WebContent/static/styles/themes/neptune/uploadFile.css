@@ -1,0 +1,32 @@
+.uploadFile-label {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 20px;
+	padding: 0px 20px;
+	background: #FEF6CE;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #EAD483;
+	color: gray;
+	text-align: center;
+	border-color: #EAD483;
+	background: #FEF6CE;
+	position: relative;
+}
+
+.uploadFile-largeLabel {
+	width: 220px !important;
+}
+
+.uploadFile-removeIcon {
+	position : absolute;
+	display: none;
+	margin-left : 2px;
+	width: 16px;
+	height: 16px;
+	background: url(../../../images/common/icons/tabs_close.png) no-repeat
+		scroll 0 center transparent;
+	cursor: pointer;
+	float: right;
+}

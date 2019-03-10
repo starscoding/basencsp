@@ -1,0 +1,1 @@
+Ext.define("FV.model.Feed",{extend:"Ext.data.Model",proxy:{type:"memory"},fields:[{name:"name",type:"string"},{name:"type",type:"string"},{name:"key",type:"string"},{name:"regexp",type:"string"},{name:"canDelete",type:"boolean"}]});

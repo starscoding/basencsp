@@ -1,0 +1,47 @@
+[{
+			text : 'Clear DB',
+			iconCls : 'clearAll',
+			hidden : true,
+			action : 'clearAll',
+			disabled : false
+		}, {
+			text : 'Load All',
+			iconCls : 'add',
+			hidden : true,
+			action : 'loadAll'
+		}, {
+			text : 'Notifications',
+			iconCls : 'notice',
+			hidden : false,
+			action : 'initNotice'
+		}, {
+			text : 'Departments',
+			iconCls : 'deptrel',
+			hidden : false,
+			action : 'initDeptRel'
+		}, {
+			text : 'Common Datas',
+			iconCls : 'basedata',
+			hidden : false,
+			action : 'initBaseData'
+		}, {
+			text : 'Resources',
+			iconCls : 'resource',
+			hidden : false,
+			action : 'initResource'
+		}, {
+			text : 'Role_Resource',
+			iconCls : 'resourcerole',
+			hidden : false,
+			action : 'initResourceRole'
+		}, {
+			text : 'User_Role',
+			iconCls : 'userrole',
+			hidden : false,
+			action : 'initUserRole'
+		}, {
+			text : 'Configurations',
+			iconCls : 'config',
+			hidden : false,
+			action : 'initConfiguration'
+		}]

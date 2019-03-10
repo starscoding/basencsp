@@ -1,0 +1,215 @@
+/*-------------------------------------
+author:		scm
+des: 		common button icon define
+-------------------------------------*/
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat;
+}
+.icon-add{
+	background:url('../../../images/common/icons/new.png') no-repeat;	
+}
+.icon-edit{
+	background:url('../../../images/common/icons/edit.png') no-repeat;
+}
+.icon-remove{
+	background:url('../../../images/common/icons/delete.png') no-repeat;	
+}
+.icon-removeAll{
+	background:url('../../../images/common/icons/removeAll.png') no-repeat;	
+}
+.icon-save{
+	background:url('../../../images/common/icons/save.png') no-repeat;
+}
+.icon-classify{
+	background:url('../../../images/common/icons/classify.png') no-repeat;
+}
+.icon-ok{
+	background:url('../../../images/common/icons/ok.png') no-repeat;
+}
+.icon-no{
+	background:url('../../../images/common/icons/no.png') no-repeat;
+}
+.icon-cancel{
+	background:url('../../../images/common/icons/cancel.png') no-repeat;
+}
+.icon-reload{
+	background:url('../../../images/common/icons/import.png') no-repeat;
+}
+.icon-search{
+	background:url('../../../images/common/icons/search.png') no-repeat;
+}
+.icon-examine{
+	background:url('../../../images/common/icons/examine.png') no-repeat;
+}
+.icon-go-top{
+	background:url('../../../images/common/icons/go_top.png') no-repeat;
+}
+.icon-export{
+	background:url('../../../images/common/icons/export.png') no-repeat;
+}
+.icon-status{
+	background:url('../../../images/common/icons/light_bulb.png') no-repeat;
+}
+.icon-notice{
+	background:url('../../../images/common/icons/message.png') no-repeat;
+}
+.icon-take-apart{
+	background:url('../../../images/common/icons/take_apart.png') no-repeat;
+}
+.icon-thumb-up{
+	background:url('../../../images/common/icons/thumb_up.png') no-repeat;
+}
+.icon-user-setting{
+	background:url('../../../images/common/icons/user_setting.png') no-repeat;
+}
+.icon-refresh{
+	background:url('../../../images/common/icons/refresh.png') no-repeat;
+}
+.icon-search-icon{
+	background:url('../../../images/common/icons/search-icon.png') no-repeat;
+}
+.icon-draw-back{
+	background:url('../../../images/common/icons/draw-back.gif') no-repeat;
+}
+.icon-open-up{
+	background:url('../../../images/common/icons/open-up.gif') no-repeat;
+}
+.icon-user-group{
+	background:url('../../../images/common/icons/user_group.png') no-repeat;
+}
+.icon-user-add{
+	background:url('../../../images/common/icons/user_add.png') no-repeat;
+}
+.icon-open-all{
+	background:url('../../../images/common/icons/open-all.png') no-repeat;
+}
+.icon-close-all{
+	background:url('../../../images/common/icons/close-all.png') no-repeat;
+}
+.icon-teaching-plan{
+	background:url('../../../images/common/icons/teaching-plan.png') no-repeat;
+}
+.icon-question{
+	background:url('../../../images/common/icons/question.png') no-repeat;
+}
+.icon-share-distribute{
+	background:url('../../../images/common/icons/share-distribute.png') no-repeat;
+}
+.icon-accredit{
+	background:url('../../../images/common/icons/accredit.png') no-repeat;
+}
+.icon-order{
+	background:url('../../../images/common/icons/order.png') no-repeat;
+}
+.icon-user-check{
+	background:url('../../../images/common/icons/user_check.png') no-repeat;
+}
+.icon-user-examine{
+	background:url('../../../images/common/icons/user_examine.png') no-repeat;
+}
+.icon-special-topic{
+	background:url('../../../images/common/icons/special_topic.png') no-repeat;
+}
+.icon-learning-world{
+	background:url('../../../images/common/icons/learning_world.png') no-repeat;
+}
+.icon-time-setting{
+	background:url('../../../images/common/icons/time_setting.png') no-repeat;
+}
+.icon-study-task{
+	background:url('../../../images/common/icons/icon_study_task.png') no-repeat;
+}
+.icon_retire{
+	background:url('../../../images/common/icons/icon_retire.png') no-repeat;
+}
+.icon_college_change{
+	background:url('../../../images/common/icons/college_change.png') no-repeat;
+}
+.icon_department_change{
+	background:url('../../../images/common/icons/department_change.png') no-repeat;
+}
+.icon_college_study{
+	background:url('../../../images/common/icons/college_study.png') no-repeat;
+}
+.icon_preview_info{
+	background:url('../../../images/common/icons/preview-info.png') no-repeat;
+}
+.icon_into{
+	background:url('../../../images/common/icons/into.png') no-repeat;
+}
+.icon_details_info{
+	background:url('../../../images/common/icons/details-info.png') no-repeat;
+}
+.icon_task{
+	background:url('../../../images/common/icons/task.png') no-repeat;
+}
+.icon_order_up{
+	background:url('../../../images/common/icons/up.png') no-repeat;
+}
+.icon_order_down{
+	background:url('../../../images/common/icons/down.png') no-repeat;
+}
+.icon_recover{
+	background:url('../../../images/common/icons/recover.png') no-repeat;
+}
+.icon-print{
+	background:url('../../../icons/print.png') no-repeat;
+}
+.icon-help{
+	background:url('../../../icons/help.png') no-repeat;
+}
+.icon-undo{
+	background:url('../../../icons/undo.png') no-repeat;
+}
+.icon-redo{
+	background:url('../../../icons/redo.png') no-repeat;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat;
+}
+.icon-module{
+	background:url('../../../images/common/icons/module.png') no-repeat;
+}
+.icon-permission{
+	background:url('../../../images/common/icons/permission.png') no-repeat;
+}
+
+.icon-xls{
+	background:url('../../../images/common/icons/xls.gif') no-repeat;
+}
+
+.icon-csv{
+	background:url('../../../images/common/icons/csv.gif') no-repeat;
+}
+
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat 2px 2px;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat 2px 2px;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat 3px 2px;
+}
+.icon-import{
+	background:url('../../../images/common/icons/import.png') no-repeat;
+}
+.set-scope{ 
+	background: url("../../../images/common/icons/folder_set.png") no-repeat;
+}
+.choose-image{ 
+	background: url("../../../images/common/icons/choice.png") no-repeat;
+}
+.default-icon{
+	background: url("../../../images/common/icons/icon.jpg") no-repeat;
+}
+.x-message-box .ext-mb-download {
+    background: url("../../../images/common/icons/download.gif") no-repeat scroll 6px 0px transparent;
+    height: 52px!important;
+}

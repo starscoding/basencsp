@@ -1,0 +1,1 @@
+define(["./config"],function(a){var b={getFoot:function(){return $("#foot")},getMsgCnt:function(){return this.getFoot().find("p")}};var c=function(){if(a.showFoot==true){b.getMsgCnt().html(a.footMsg);b.getFoot().removeClass("hide")}};return{init:c}});

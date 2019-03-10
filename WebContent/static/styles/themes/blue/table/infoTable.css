@@ -1,0 +1,36 @@
+.rfgcon {
+	width: 100%;
+	background: #FFFFFF;
+}
+
+.rfgtab1 {
+	background: #eee
+		url('../../../../images/themes/blue/table/rfgbg.gif') repeat-x;
+	width: 100%;
+	border: 1px solid #89b5f6;
+}
+
+.rfgtd1 {
+	width: 120px;
+	line-height: 25px;
+	font-size: 12px;
+	font-weight: 100;
+	border-right: 1px solid #89b5f6;
+	text-align: right;
+	padding-right: 6px;
+	border-bottom: 1px solid #89b5f6;
+	color: #333;
+	border-top: 1px solid #fff;
+}
+
+.rfgtd2 {
+	line-height: 25px;
+	font-size: 12px;
+	color: #333;
+	font-weight: 100;
+	border-left: 1px solid #fff;
+	text-align: left;
+	padding-left: 4px;
+	border-bottom: 1px solid #89b5f6;
+	border-top: 1px solid #fff;
+}

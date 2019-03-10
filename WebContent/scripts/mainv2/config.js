@@ -1,0 +1,1 @@
+define(function(){var a={menu_num:6};return a});

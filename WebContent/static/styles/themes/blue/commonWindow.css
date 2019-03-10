@@ -1,0 +1,141 @@
+.window {
+	overflow: hidden;
+}
+
+.window button {
+	cursor: pointer;
+}
+
+.contentContainer {
+	position: relative;
+	width:100%;
+	background: white;
+	height: 100%;
+}
+
+.windowCommonBtnCls1 {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #4C9EE0;
+	padding: 2px 2px 2px 2px;
+	margin: 3px;
+	border-width: 1px;
+	border-style: solid;
+	background-image: none;
+	background-color: white;
+	background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%, #EAFAFF),
+		color-stop(48%, #C8E6FF), color-stop(52%, #C8E6FF),
+		color-stop(100%, #9DD3FF) );
+	background-image: -webkit-linear-gradient(top, #EAFAFF, #C8E6FF 48%, #C8E6FF 52%, #9DD3FF);
+	background-image: -moz-linear-gradient(top, #EAFAFF, #C8E6FF 48%, #C8E6FF 52%, #9DD3FF);
+	background-image: -o-linear-gradient(top, #EAFAFF, #C8E6FF 48%, #C8E6FF 52%, #9DD3FF);
+	background-image: -ms-linear-gradient(top, #EAFAFF, #C8E6FF 48%, #C8E6FF 52%, #9DD3FF);
+	background-image: linear-gradient(top, #EAFAFF, #C8E6FF 48%, #C8E6FF 52%, #9DD3FF)
+}
+
+.windowCommonBtnCls2 {
+	background-image:
+		url('../../../jslib/extjs-4.1.0/resources/themes/images/default/btn/btn-default-small-bg.gif');
+}
+
+.win_top_left {
+	background: url(../../../images/common/window/windows_01.png) no-repeat;
+	width: 12px;
+	height: 32px;
+}
+
+.win_top_right {
+	background: url(../../../images/common/window/windows_02.png) no-repeat;
+	width: 10px;
+	height: 32px;
+}
+
+.win_bottom_left {
+	background: url(../../../images/common/window/windows_03.png) no-repeat;
+	width: 12px;
+	height: 10px;
+}
+
+.win_bottom_right {
+	background: url(../../../images/common/window/windows_04.png) no-repeat;
+	width: 10px;
+	height: 10px;
+}
+
+.win_left {
+	background: url(../../../images/common/window/left.png) repeat-y;
+	width: 12px;
+	float: left;
+}
+
+.win_right {
+	background: url(../../../images/common/window/right.png) repeat-y;
+	width: 10px;
+	float: left;
+}
+
+.win_center {
+	background: #b0dcfb;
+	float: left;
+}
+
+.win_top {
+	background: url(../../../images/common/window/top.png) repeat-x;
+	cursor: move;
+	height: 32px;
+}
+
+.win_bottom {
+	background: url(../../../images/common/window/bottom.png) repeat-x;
+	height: 10px;
+}
+
+.window_title {
+	background: url(../../../images/common/window/logo_bg.png) no-repeat;
+	height: 26px;
+	float: left;
+	color: white;
+	font-family: tahoma,arial,verdana,sans-serif;
+	font-weight:bold;
+	font-size: 14px;
+	padding: 5px 0px 0px 23px !important;
+}
+
+.window_close {
+	cursor: pointer;
+	background: url(../../../images/common/window/closeon.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin-top: 4px;
+}
+
+.window_close_hover {
+	background: url(../../../images/common/window/close.png) no-repeat
+		!important;
+}
+
+.window_bton {
+	float: right;
+	background: url(../../../images/common/window/window_bton.png) no-repeat;
+	width: 60px;
+	height: 26px;
+	line-height: 26px;
+	border: 0px;
+	color: #185987;
+	cursor: pointer;
+}
+
+.window_bton:hover {
+	background: url(../../../images/common/window/window_bton_on.png)
+		no-repeat;
+	color: #0485df;
+}
+
+.buttonContainer {
+	height: 30px;
+}

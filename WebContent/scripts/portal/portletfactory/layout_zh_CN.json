@@ -1,0 +1,28 @@
+{
+	"layout" : [{
+				"id" : "1",
+				"name" : "布局一",
+				"desc" : "单列布局",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout1.gif"
+			}, {
+				"id" : "2",
+				"name" : "布局二",
+				"desc" : "双列等宽布局",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout2.gif"
+			}, {
+				"id" : "3",
+				"name" : "布局三",
+				"desc" : "双列布局,左窄右宽",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout3.gif"
+			}, {
+				"id" : "4",
+				"name" : "布局四",
+				"desc" : "双列布局,左宽右窄",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout4.gif"
+			}, {
+				"id" : "5",
+				"name" : "布局五",
+				"desc" : "三列等宽布局",
+				"imageUrl" : "/static/images/themes/blue/portal/layout/layout5.gif"
+			}]
+}

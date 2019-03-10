@@ -1,0 +1,1 @@
+Ext.define("Ext.inas.StatusComboBox",{extend:"Ext.form.field.ComboBox",xtype:"statusComboBox",blankText:MSG_FIELD_NOTNULL,typeAhead:true,editable:false,displayField:"name",valueField:"value",initComponent:function(){this.store=Ext.create("Ext.data.Store",{fields:["name","value"],data:[{name:"成功",value:"1"},{name:"失败",value:"0"}]});this.callParent(arguments)}});

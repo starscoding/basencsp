@@ -1,0 +1,1 @@
+Ext.define("FV.store.RedisType",{extend:"Ext.data.Store",model:"FV.model.RedisType",data:[{label:"Hash",value:"Hash"},{label:"Zset",value:"Zset"},{label:"String",value:"String"},{label:"List",value:"List"},{label:"Set",value:"Set"}]});

@@ -1,0 +1,265 @@
+CREATE TABLE `sys_commondatas` (
+  `ID_` varchar(32) NOT NULL,
+  `ATTRIBUTE_` varchar(100) DEFAULT NULL,
+  `DESC_` varchar(500) DEFAULT NULL,
+  `EXTEND_` varchar(300) DEFAULT NULL,
+  `LABEL_` varchar(200) NOT NULL,
+  `NAME_` varchar(100) DEFAULT NULL,
+  `ORDER_` int(11) DEFAULT NULL,
+  `VALUE_` varchar(200) DEFAULT NULL,
+  `PARENT_ID` varchar(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_conf` (
+  `ID_` varchar(32) NOT NULL,
+  `MODULE_` varchar(50) NOT NULL,
+  `SUB_MODULE` varchar(50) NOT NULL,
+  `NAME_` varchar(50) NOT NULL,
+  `VALUE_` varchar(2000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_department` (
+  `ID_` varchar(32) NOT NULL,
+  `DESC_` varchar(200) DEFAULT NULL,
+  `LOGIN_MODE` varchar(1) DEFAULT NULL,
+  `NAME_` varchar(20) NOT NULL,
+  `NAME_CN` varchar(50) NOT NULL,
+  `ORDER_` int(11) NOT NULL,
+  `PARENT_ID` varchar(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_desktop_resource` (
+  `ORDER_` int(11) NOT NULL,
+  `DESKTOP_ID` varchar(32) NOT NULL,
+  `RESOURCE_ID` varchar(32) NOT NULL,
+  `ID_` varchar(32) NOT NULL,
+  `NAME_` varchar(100) NOT NULL,
+  `PARENT_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_gadgets` (
+  `ID_` varchar(32) NOT NULL,
+  `CATEGORY_` varchar(1) NOT NULL,
+  `CLASS_NAME` varchar(100) NOT NULL,
+  `CLASS_URL` varchar(100) NOT NULL,
+  `CREATE_TIME` varchar(24) NOT NULL,
+  `DEFAULT_HEIGHT` varchar(10) NOT NULL,
+  `DESC_` varchar(255) NOT NULL,
+  `IMAGE_URL` varchar(100) NOT NULL,
+  `NAME_` varchar(100) NOT NULL,
+  `SCROLLING_` varchar(1) NOT NULL,
+  `SMALL_IMAGE_URL` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_logs` (
+  `ID_` varchar(32) NOT NULL,
+  `APP_HOST` varchar(16) NOT NULL,
+  `HOST_` varchar(160) DEFAULT NULL,
+  `LOG_LEVEL` varchar(1) DEFAULT NULL,
+  `MESSAGE_` varchar(2000) DEFAULT NULL,
+  `MODULE_CODE` varchar(32) DEFAULT NULL,
+  `OPERATE_TYPE` varchar(2) DEFAULT NULL,
+  `QRYUSED_TIME` varchar(10) DEFAULT NULL,
+  `RECORD_TIME` varchar(24) DEFAULT NULL,
+  `USERNAME_` varchar(32) DEFAULT NULL,
+  `AUDIT_ID` varchar(20) DEFAULT NULL,
+  `AUTH_FLAG` varchar(1) DEFAULT NULL,
+  `OPT_REASON` varchar(500) DEFAULT NULL,
+  `ORDER_ID_` varchar(32) DEFAULT NULL,
+  `OUTER_USER_` varchar(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_logs_stat` (
+  `ID_` varchar(32) NOT NULL,
+  `MODULE_CODE` varchar(50) NOT NULL,
+  `TIME_TYPE` varchar(1) NOT NULL,
+  `TIME_ID` varchar(10) NOT NULL,
+  `USERNAME_` varchar(50) NOT NULL,
+  `OPT_TIMES` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_model_deploy` (
+  `ID_` varchar(32) NOT NULL,
+  `MODELID` varchar(32) NOT NULL,
+  `DEPLOYER` varchar(50) NOT NULL,
+  `DEPLOY_TIME` varchar(24) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_notification` (
+  `ID_` varchar(32) NOT NULL,
+  `CONTENT_` varchar(3000) NOT NULL,
+  `EFFECT_ENDTIME` varchar(24) NOT NULL,
+  `EFFECT_STARTTIME` varchar(24) NOT NULL,
+  `FILE_` varchar(1000) NOT NULL,
+  `FILE_REAL` varchar(1000) NOT NULL,
+  `ISTOP` varchar(1) NOT NULL,
+  `LEVEL_` varchar(2) NOT NULL,
+  `PUBLISH_TIME` varchar(24) NOT NULL,
+  `STATUS_` varchar(1) NOT NULL,
+  `TITLE_` varchar(100) NOT NULL,
+  `TYPE_` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_notification_log` (
+  `ID_` varchar(32) NOT NULL,
+  `NOTIFICATION_ID` varchar(32) NOT NULL,
+  `VIEW_IPADDRESS` varchar(32) NOT NULL,
+  `VIEW_TIME` varchar(32) NOT NULL,
+  `VIEW_USERID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_notification_rel` (
+  `ID_` varchar(32) NOT NULL,
+  `REL_ID` varchar(255) NOT NULL,
+  `REL_TYPE` varchar(1) NOT NULL,
+  `NOTIFICATION_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_portal` (
+  `ID_` varchar(32) NOT NULL,
+  `COLUMN_WIDTH` varchar(100) NOT NULL,
+  `DESC_` varchar(255) NOT NULL,
+  `IS_DEFAULT` varchar(1) NOT NULL,
+  `NAME_` varchar(100) NOT NULL,
+  `ORDER_` varchar(1) NOT NULL,
+  `USER_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_portlet_conf` (
+  `ID_` varchar(32) NOT NULL,
+  `COLUMN_INT` varchar(1) NOT NULL,
+  `GADGETS_ID` varchar(32) NOT NULL,
+  `HEIGHT_` varchar(10) NOT NULL,
+  `PORTAL_ID` varchar(32) NOT NULL,
+  `POSITIONSEQ_` varchar(1) NOT NULL,
+  `REFRESH_TIME` varchar(10) NOT NULL,
+  `COLUMN_NUMBER` varchar(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_rescource` (
+  `ID_` varchar(32) NOT NULL,
+  `CREATE_TIME` varchar(24) NOT NULL,
+  `CREATOR_` varchar(20) DEFAULT NULL,
+  `IMAGE_` varchar(255) DEFAULT NULL,
+  `IS_SHOWDESKTOP` varchar(1) NOT NULL,
+  `IS_WEBPAGE` varchar(1) NOT NULL,
+  `KIND_` varchar(1) NOT NULL,
+  `LOCATION_` varchar(255) DEFAULT NULL,
+  `NAME_` varchar(50) NOT NULL,
+  `NAME_CN` varchar(100) NOT NULL,
+  `ORDER_` int(11) NOT NULL,
+  `REMARKS_` varchar(255) DEFAULT NULL,
+  `STATUS_` varchar(1) NOT NULL,
+  `PARENT_ID` varchar(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_role` (
+  `ID_` varchar(32) NOT NULL,
+  `CREATE_TIME` varchar(24) NOT NULL,
+  `CREATOR_` varchar(32) NOT NULL,
+  `DESCRIPTION_` varchar(255) DEFAULT NULL,
+  `NAME_` varchar(32) NOT NULL,
+  `NAME_CN` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_roleregion` (
+  `ID_` varchar(32) NOT NULL,
+  `REGION` varchar(2) NOT NULL,
+  `ROLE_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_roleresource` (
+  `ROLE_ID` varchar(32) NOT NULL,
+  `RESOURCE_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_user` (
+  `ID_` varchar(32) NOT NULL,
+  `ACCOUNT_ENABLED` varchar(1) NOT NULL,
+  `ACCOUNT_CREATE_TIME` varchar(24) NOT NULL,
+  `ACCOUNT_EXPIRED_ENDTIME` varchar(24) DEFAULT NULL,
+  `ACCOUNT_EXPIRED_STARTTIME` varchar(24) DEFAULT NULL,
+  `AUDIT_ALARMMSG_RECV_TYPE` varchar(8) DEFAULT NULL,
+  `AUDIT_TEAM` varchar(20) DEFAULT NULL,
+  `CATEGORY_` varchar(1) NOT NULL,
+  `CREATOR_` varchar(20) NOT NULL,
+  `EMAIL_` varchar(50) DEFAULT NULL,
+  `FIXED_NO` varchar(20) DEFAULT NULL,
+  `FULLNAME` varchar(30) DEFAULT NULL,
+  `ISSHOWMAXTAB` varchar(1) NOT NULL,
+  `LAST_LOGIN_TIME` varchar(24) DEFAULT NULL,
+  `LAST_LOGIN_IP` varchar(16) DEFAULT NULL,
+  `MOBILE_NO` varchar(20) DEFAULT NULL,
+  `NAME_PINYIN` varchar(100) DEFAULT NULL,
+  `OLD_PASSWORD` varchar(240) DEFAULT NULL,
+  `OWNER_` varchar(20) DEFAULT NULL,
+  `PASSWORD_` varchar(80) NOT NULL,
+  `PWD_EXPIRED_DAYS` int(11) NOT NULL,
+  `PWD_MODIFY_TIME` varchar(24) DEFAULT NULL,
+  `SEX_` varchar(1) NOT NULL,
+  `TIMES_` int(11) NOT NULL,
+  `USERLEVEL` varchar(1) NOT NULL,
+  `USERNAME` varchar(20) NOT NULL,
+  `VERSION_` int(11) DEFAULT NULL,
+  `XTHEME_` varchar(10) DEFAULT NULL,
+  `CITY_` varchar(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_user_depart_range` (
+  `USER_ID` varchar(32) NOT NULL,
+  `DEPT_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_user_online_log` (
+  `ID_` varchar(32) NOT NULL,
+  `SESSION_ID` varchar(50) NOT NULL,
+  `USER_NAME` varchar(50) NOT NULL,
+  `START_TIME` decimal(18,0) NOT NULL,
+  `CLIENT_IP` varchar(25) NOT NULL,
+  `START_TIME_STR` varchar(25) NOT NULL,
+  `END_TIME` decimal(18,0) NOT NULL,
+  `END_TIME_STR` varchar(25) NOT NULL,
+  `LIVE_TIME` decimal(18,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_user_online_log_d` (
+  `ID_` varchar(32) NOT NULL,
+  `TIME_ID` varchar(25) NOT NULL,
+  `USER_NAME` varchar(50) NOT NULL,
+  `LIVE_TIME` decimal(18,0) NOT NULL,
+  `LOGIN_COUNT` decimal(18,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_user_req_log` (
+  `ID_` varchar(32) NOT NULL,
+  `SESSION_ID` varchar(50) NOT NULL,
+  `USER_NAME` varchar(50) NOT NULL,
+  `REQ_URL` varchar(200) NOT NULL,
+  `CLIENT_IP` varchar(20) NOT NULL,
+  `SERVER_IP` varchar(20) NOT NULL,
+  `REQ_TIME` decimal(18,0) NOT NULL,
+  `REQ_TIME_STR` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_userdepartment` (
+  `USER_ID` varchar(32) NOT NULL,
+  `DEPT_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_userdesktop` (
+  `ID_` varchar(32) NOT NULL,
+  `CREATE_TIME` varchar(24) NOT NULL,
+  `ORDER_` int(11) NOT NULL,
+  `USER_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_usernotification_deleted` (
+  `ID_` varchar(32) NOT NULL,
+  `NOTIFICATION_ID` varchar(32) NOT NULL,
+  `USER_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sys_userrole` (
+  `USER_ID` varchar(32) NOT NULL,
+  `ROLE_ID` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

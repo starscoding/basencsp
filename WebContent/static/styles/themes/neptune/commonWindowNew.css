@@ -1,0 +1,82 @@
+.eastcom_commonWindow {
+	border: 0px none;
+	position: absolute;
+	padding: 5px;
+	z-index: 10000;
+	box-sizing : content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+}
+
+.eastcom_commonWindow * {
+	box-sizing : content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+}
+
+.eastcom_commonWindow img.overlay {
+	position: absolute;
+	z-index: -1;
+}
+
+.eastcom_commonWindow div.title {
+	width: 100%;
+	background: url("../../../images/themes/blue/commonWindow/blankbg.png")
+		repeat;
+	padding-top: 5px;
+	border-bottom: 1px solid white;
+}
+
+.eastcom_commonWindow div.title a.titleLabel {
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.eastcom_commonWindow div.title a.close {
+	background-image:
+		url("../../../images/themes/blue/commonWindow/close.png");
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	float: right;
+	margin: -20px -15px 0 0;
+}
+
+.eastcom_commonWindow div.contentContainer {
+	position: relative;
+	overflow: auto;
+	background: url("../../../images/themes/blue/commonWindow/blankbg.png")
+		repeat;
+}
+
+.eastcom_commonWindow div.btnContainer {
+	height: 30px;
+	position: relative;
+}
+
+.eastcom_commonWindow div.btnContainer button.btn {
+	border-color: #4C9EE0;
+	border-width: 0px;
+	border-style: solid;
+	margin-top: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 3px;
+	margin: 5px 2px;
+	background-color: #E0EEEE;
+}
+
+.eastcom_commonWindow div.btnContainer button.btn-over {
+	background-color: #FFF;
+}
+
+.eastcom_commonWindow div.btnContainer button.btn-pressed {
+	background-color: #b6cbe4;
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+	default-lazy-init="true">
+
+	<description>Shiro Configuration</description>
+	
+	<bean id="shiroConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:/security/shiro.properties" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+	
+	<!-- Shiro's main business-tier object for web-enabled applications -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="${shiro.activeRealm}" />
+		<property name="cacheManager" ref="cacheManager" />
+		<property name="subjectFactory" ref="casSubjectFactory"/>
+	</bean>
+	
+	<!-- 項目自定义的Realm -->      
+	<bean id="casRealm" class="${shiro.custom.casrealm}"> 
+		<property name="defaultRoles" value="ROLE_USER"/>      
+		<property name="casServerUrlPrefix" value="${shiro.casRealm.casServerUrlPrefix}"/> 
+		<!-- 客户端的回调地址设置，必须和下面的shiro-cas过滤器拦截的地址一致 --> 
+		<property name="casService" value="${shiro.casRealm.casService}"/> 
+	</bean> 
+	<!-- 如果要实现cas的remember me的功能，需要用到下面这个bean，并设置到securityManager的subjectFactory中 --> 
+	<bean id="casSubjectFactory" class="org.apache.shiro.cas.CasSubjectFactory"/> 
+	
+	<bean id="ncspRealm" class="com.eastcom_sw.core.service.security.NcspRealm">
+	</bean>
+	<bean id="ncspAuth" class="com.eastcom_sw.core.web.filter.NcspAuthFilter">
+	</bean>
+	
+	<!--xssFilter.propertie获取过滤关键词列表 -->
+	<bean id="safelessList" class="com.eastcom_sw.core.web.XssFilterSafelessList"/>
+	<bean id="xssFilter" class="com.eastcom_sw.core.web.filter.XssFilter">
+		<!--校验失败的跳转页面 -->
+		<property name="unauthorizedUrl" value="/pages/xsscheckerror.jsp"/>
+		<property name="safeless" ref="safelessList"/>
+		<!--是否校验req.getQueryString -->
+		<property name="isCheckQueryString" value="false"/>
+		<!--是否校验参数的name值 -->
+		<property name="isCheckParamName" value="true"/>
+	</bean>	
+	<bean id="csrfFilter" class="com.eastcom_sw.core.web.filter.CsrfFilter">
+	</bean>	
+	<bean id="hostFilter" class="com.eastcom_sw.core.web.filter.HostFilter">
+	</bean>
+	<bean id="customFilter" class="${shiro.custom.filter}">
+	</bean>	
+	
+	<!--鉴权模块安全漏洞过滤，自己配置-->
+	<!--
+	<bean id="authSafeFilter" class="com.eastcom_sw.cis.mobileauth.filter.AuthSafeFilter">
+		安全路径 
+		<property name="safeUrls">
+			<list>
+				<value>.jsp</value>
+				<value>new/getTypes</value>
+				<value>new/checkAuth</value>
+				<value>new/auth</value>				
+			</list>
+		</property>
+		
+			非安全路径，过滤器必须校验路径，可以不用配置，
+			如果继续扫描出安全漏洞，此处将配置
+			配置路径为鉴权模块ajax请求的地址(进行后台查询的地址)
+		
+		<property name="unSafeUrls">
+			<list>
+				<value>XXXX</value>		
+			</list>
+		</property>
+	</bean>-->
+	
+	<bean id="casFilter" class="org.apache.shiro.cas.CasFilter"> 
+		<!-- 配置验证错误时的失败页面  --> 
+		<property name="failureUrl" value="/error.jsp"/>
+	</bean>
+	
+	<!--Shiro filter url configs -->
+	<bean id="shiroFilterChainDefinitionsMap" class="com.eastcom_sw.core.web.ShiroFilterChainDefinitionsMap"/>
+	
+	<!-- Shiro Filter -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="${shiro.shiroFilter.loginUrl}" />
+		<property name="successUrl" value="${shiro.shiroFilter.successUrl}" />
+		<property name="unauthorizedUrl" value="${shiro.shiroFilter.unauthorizedUrl}" />  
+		<property name="filters">
+			<map>
+				<entry key="ncspAuth" value-ref="ncspAuth"/>
+				<entry key="cas" value-ref="casFilter"/>
+				<entry key="xss" value-ref="xssFilter"/>
+				<entry key="csrf" value-ref="csrfFilter"/>
+				<entry key="hostFilter" value-ref="hostFilter"/>
+				<entry key="customFilter" value-ref="customFilter"/>
+				<!--<entry key="authSafe" value-ref="authSafeFilter"/>-->				
+			</map>
+		</property>
+		<property name="filterChainDefinitionMap" ref="shiroFilterChainDefinitionsMap"/>
+		<!--
+			<property name="filterChainDefinitions">
+				<value>
+					${shiro.filterChainDefinitions}
+				 </value>
+			</property>
+			-->
+	</bean>
+	
+	<!-- 用户授权信息Cache -->
+	<bean id="cacheManager" class="org.apache.shiro.cache.MemoryConstrainedCacheManager" />
+</beans>

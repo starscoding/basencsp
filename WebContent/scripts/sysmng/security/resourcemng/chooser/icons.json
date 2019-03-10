@@ -1,0 +1,73 @@
+[
+    {
+        name: '系统管理',
+        thumb: 'system_management.png',
+        discription: '系统管理大图标',
+        type: '系统管理'
+    },{
+        name: '基础应用模块',
+        thumb: 'cp_complaint_hotspots.png',
+        discription: '基础应用模块管理大图标',
+        type: '基础应用模块管理'
+    },{
+        name: '投诉工单',
+        thumb: 'complaints_work_order.png',
+        discription: '投诉工单',
+        type: '投诉工单'
+    },{
+        name: 'CP投诉热点',
+        thumb: 'cp_complaint_hotspots.png',
+        discription: 'CP投诉热点',
+        type: 'CP投诉热点'
+    },{
+        name: '投诉多维分析',
+        thumb: 'complaints_multidimensional.png',
+        discription: '投诉多维分析',
+        type: '投诉多维分析'
+    },{
+        name: '部门管理',
+        thumb: 'division_management.png',
+        discription: '部门管理描述',
+        type: '系统管理'
+    },{
+        name: '角色管理',
+        thumb: 'Role_Management.png',
+        discription: '角色管理描述',
+        type: '系统管理'
+    },{
+        name: '资源管理',
+        thumb: 'resource_management.png',
+        discription: '资源管理描述',
+        type: '系统管理'
+    },{
+        name: '用户管理',
+        thumb: 'user.png',
+        discription: '用户管理描述',
+        type: '系统管理'
+    },{
+    	 name: '系统数据维护',
+        thumb: 'data_maintenance.png',
+        discription: '系统数据维护',
+        type: '系统管理'
+    },{
+        name: '系统公告管理',
+        thumb: 'system_notice.png',
+        discription: '系统公告管理',
+        type: '系统管理'
+    },{
+        name: '系统日志查询',
+        thumb: 'system_journal.png',
+        discription: '系统日志查询描述',
+        type: '系统管理'
+    },{
+    	name: '个人公共管理',
+        thumb: 'notify.png',
+        discription: '个人公共管理',
+        type: '系统管理'
+    },{
+    	name: 'ETL采集框架',
+        thumb: 'etl.png',
+        discription: 'ETL采集框架',
+        type: 'ETL'
+    }
+]

@@ -1,0 +1,1 @@
+define(["./menu","./toolbar","./tab","./userinfo"],function(d,c,b,a){d.init();b.init();c.init();a.init()});

@@ -1,0 +1,1 @@
+Ext.define("FV.model.RedisType",{extend:"Ext.data.Model",fields:["label","value"]});
